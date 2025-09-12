@@ -1,44 +1,44 @@
 {
-  "name": "react-calendars",
-  "keywords": [
-    "react",
-    "datepicker",
-    "calendar",
-    "date"
-  ],
-  "version": "1.2.0",
-  "description": "A react calendar and datepicker library",
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "main": "./dist/react-calendars.umd.js",
-  "module": "./dist/react-calendars.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/react-calendars.es.js",
-      "require": "./dist/react-calendars.umd.js"
+    "name": "react-calendars",
+    "keywords": [
+        "react",
+        "datepicker",
+        "calendar",
+        "date"
+    ],
+    "version": "1.2.0",
+    "description": "A react calendar and datepicker library",
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "main": "./dist/react-calendars.umd.js",
+    "module": "./dist/react-calendars.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/react-calendars.es.js",
+            "require": "./dist/react-calendars.umd.js"
+        }
+    },
+    "repository": "git@github.com:jeremiedubuis/react-calendars.git",
+    "author": "Jérémie Dubuis <jeremie.dubuis@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "watch": "vitest",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "react": "^16 || ^17 || ^18 || ^19",
+        "react-dom": "^16 || ^17 || ^18 || ^19"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.0.3",
+        "prettier": "^3.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "vite": "^4.4.6"
     }
-  },
-  "repository": "git@github.com:jeremiedubuis/react-calendars.git",
-  "author": "Jérémie Dubuis <jeremie.dubuis@gmail.com>",
-  "license": "MIT",
-  "private": false,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "watch": "vitest",
-    "prepublishOnly": "npm run build"
-  },
-  "peerDependencies": {
-    "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.0.3",
-    "prettier": "^3.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "vite": "^4.4.6"
-  }
 }
